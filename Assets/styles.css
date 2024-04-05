@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*::selection{
+    background:var(--red);
+    color:#fff;
+}
+
+section{
+    padding: 2rem 5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: absolute;
+    top:0; left: 0; right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: lightcoral;
+    padding: 2rem 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+header .navigationbar a{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.fa-coffee{
+    padding: 10px;
+    color: rgb(17, 30, 205);
+}
+
+.logo{
+    color: rgb(17, 30, 205);
+    font-size: 2.5rem;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.beranda{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-height: 100vh;
+    align-items: center;
+    background: lightyellow;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.9);
+    margin: 4rem;
+    font-weight: 500;
+}
+
+.beranda .konten{
+    flex: 1 1 10%;
+    padding-top: 10rem;
+}
+
+.beranda .konten :hover{
+    color: rgb(0, 0, 0);
+}
+
+.beranda .konten h3{
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.beranda .gambar{
+    padding-top: 10rem;
+    flex: 1 1 25%;
+}
+.beranda .gambar img{
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+}
+
+.beranda .konten h3 :hover{
+    color: white;
+}
+
+.beranda .konten p{
+    text-align: justify;
+    font-size: 1.25rem;
+    color:black;
+    padding: 1rem 0;
+}
+
+.heading{
+    display: flex;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.heading-fasilitas{
+    text-align: center;
+    font-size: 3.5rem;
+    flex: 1 1 10%;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.9);
+    border-radius: 0.5rem;
+    background: lightyellow;
+    margin: 4rem;
+}
+
+.fasilitas .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.fasilitas .box-container .box{
+    background: lightyellow;
+    flex: 1 1 40rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.9);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.fasilitas .box-container .box .konten{
+    text-align: center;
+    padding: 2rem;
+}
+
+.fasilitas .box-container .box .konten i{
+    margin: 1.5rem 0;
+}
+
+.fasilitas .box-container .box .konten h3{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.fasilitas .box-container .box .konten p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.heading_reservasi{
+    text-align: center;
+    font-size: 3.5rem;
+    flex: 1 1 10%;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 0.2rem 1rem rgba(0,0,0,.9);
+    border-radius: 0.5rem;
+    background: lightyellow;
+    margin: 4rem;
+}
+
+.reservasi .roombox-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    list-style: none;
+}
+
+.reservasi .roombox-container .box{
+    background: lightyellow;
+    flex: 1 1 20rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 1rem rgba(0,0,0,.9);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.reservasi .roombox-container .box .room{
+    padding: 2rem;
+}
+
+.reservasi .roombox-container .box .room i{
+    margin: 1.5rem 0;
+}
+
+.reservasi .roombox-container .box .room h3{
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.reservasi .roombox-container .box .room p{
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.reservasi .roombox-container .box .room li{
+    list-style-type: none;
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.5rem 0;
+    font-weight: 700;
+}
+
+.reservasi .roombox-container .box .room a{
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.reservasi .roombox-container .box:hover .image{
+    top: 0;
+}
+
+.checked{
+    color: orange;
+}
+
+.button{
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: 2px solid;
+    color: black;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 5rem;
+}
+
+.button:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+.button:hover{
+    background: lightskyblue;
+}
+
+.reservasi-button{
+    align-items: center;
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 2px solid black;
+    padding: 15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+
+.reservasi-button h1{
+    font-size: 2.5rem;
+}
+
+.reservasi-button .form-element {
+    font-size: 1rem;
+    border: 1px solid black;
+    margin: 20px;
+    text-align: left;
+}
+
+.tentang .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.tentang .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    border: 5px solid black;
+    box-shadow: 0 0.2rem 1rem rgba(0,0,0,.9);
+    border-radius: 0.5rem;
+    flex: 1 1 30rem;
+    background: lightyellow;
+    margin-top: 6rem;
+}
+.tentang .box-container .box img{
+    height: 20rem;
+    width: 20rem;
+    border: 5px solid black;
+    margin-top: -10rem;
+    object-fit: cover;
+}
+.tentang .box-container .box h3{
+    font-size: 4rem;
+    color:black;
+    padding:.5rem 0;
+}
+.tentang .box-container .box p{
+    font-size: 2rem;
+    font-weight: 500;
+    color:black;
+    padding:1rem 0;
+}
+
+footer{
+    background: lightcoral;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+footer .kontak{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    top: -70px;
+    gap: 1.5rem;
+}
+
+.footer .kontak i{
+    margin: 1.5rem 0;
+}
+
+footer .tambahan{
+    padding: 2.5rem 1rem;
+    color:black;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1080px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
